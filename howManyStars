@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Lab13 
+{ 
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner (System.in); 
+    
+        System.out.println("How many stars?"); 
+        int stars = sc.nextInt();
+        String numStar = "";
+        
+        int count = 0; 
+        while (count<stars) 
+        {
+            count = count+1; 
+            numStar = numStar.concat("*");
+            System.out.println(numStar);
+        }
+        
+        count = stars;
+        while (count>0) 
+        {
+            count = count-1; 
+            numStar = numStar.concat("");
+            System.out.println(numStar);
+        }
+    }
+}
